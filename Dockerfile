@@ -69,6 +69,6 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 
 #10. Install playwright and pip dependencies
-RUN pip install playwright==1.8.0a1 pyodbc PyPDF2 requests bs4 crypto \
+RUN pip install playwright==1.8.0a1 pyodbc PyPDF2 requests bs4 pycryptodome \
     && playwright install
 
