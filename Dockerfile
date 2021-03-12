@@ -1,7 +1,7 @@
 FROM ubuntu:focal
 
 # 1. Install latest Python
-RUN apt-get update && apt-get install -y python3 python3-pip curl unixodbc-dev && \
+RUN apt-get update && apt-get install -y python python-pip python3 python3-pip curl unixodbc-dev && \
     update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1 && \
     update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
